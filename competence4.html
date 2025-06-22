@@ -4,17 +4,18 @@
 <head> 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Compétence 4 : gérer des données de l’information</title>
-	<link rel="stylesheet" href="assets/css/sytles.css">
+	<title>Compétence 4 : Gérer des données de l’information</title>
+	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="stylesheet" href="assets/css/competences.css">
-
+	<link rel="stylesheet" href="assets/css/stylebase.css">
 </head>
 
 <body>
 	<header>
-		<h1>Compétence 4 : gérer des données de l’information</h1>
+		<h1>Compétence 4 : Gérer des données de l’information</h1>
 		<p>Cette compétence consiste à savoir créer, manipuler, exploiter et stocker des données de manière efficace.</p>
 	</header>
+
 	<nav>
 		<a href="accueil.html">Accueil</a>
 		<a href="competence1.html">Compétence 1</a>
@@ -25,16 +26,15 @@
 		<a href="competence6.html">Compétence 6</a>
 	</nav>
 
-	<h2>Je suis en cours de validation de cette compétences</h2>
+	<h2>Je suis en cours de validation de cette compétence</h2>
 	<h2>Mes projets réalisés</h2>
 
 	<div class="projet">
-		<h3>Projet 6 : SAE 1.04 Création d'une base de données </h3>
+		<h3>Projet 6 : SAE 1.04 - Création d'une base de données</h3>
 		<div class="projet-details">
-			<p><strong>Contexte : </strong>Durant cette SAE, nous avons dû créer une base de données, insérer des données puis faire des requêtes pour vérifier si tout fonctionne correctement, un schéma relationnel et un diagramme MCD à partir d'un cahier des charges.</p>
-			<p><strong>Technologies utilisées :</strong> SQL</p>
-			<p><strong>Fonctionnalités principales :</strong></p>
-			<p><strong>Apprentissages :</strong> J'ai appris à créer une base de données à partir d'un cahier des charges tout en respectant toutes les contraintes données par les professeurs.</p> 
+			<p><strong>Contexte :</strong> Durant cette SAE, nous avons dû créer une base de données, y insérer des données, puis effectuer des requêtes pour vérifier son bon fonctionnement. Nous avons également conçu un schéma relationnel et un diagramme MCD à partir d'un cahier des charges.</p>
+			<p><strong>Technologie utilisée :</strong> SQL</p>
+			<p><strong>Apprentissages :</strong> J'ai appris à concevoir une base de données en respectant les contraintes du cahier des charges, tout en m'assurant de sa cohérence et de son bon fonctionnement.</p> 
 			<div class="liens-projet">
 				<a href="#" class="btn-projet">Voir le projet</a>
 			</div>
@@ -42,11 +42,11 @@
 	</div>
 
 	<div class="projet">
-		<h3>Projet 7 : SAE exploitation d'une base de données </h3>
+		<h3>Projet 7 : SAE - Exploitation d'une base de données</h3>
 		<div class="projet-details">
-			<p><strong>Contexte :</strong> Durant cette SAE, nous avons dû créer une base de données, insérer des données puis faire des requêtes au format SQL et en algèbre relationnelle pour vérifier si tout fonctionne correctement, un schéma relationnel et un diagramme MCD à partir d'un cahier des charges.</p>
+			<p><strong>Contexte :</strong> Dans ce projet, nous avons de nouveau conçu une base de données, puis réalisé des requêtes complexes en SQL et en algèbre relationnelle, à partir d’un cahier des charges précis.</p>
 			<p><strong>Langage utilisé :</strong> SQL</p>
-			<p><strong>Apprentissages :</strong> J'ai approfondi la création et l’insertion de données dans une base de données à partir d'un cahier des charges tout en respectant les contraintes données par les professeurs. Puis j'ai réalisé des requêtes en algèbre relationnelle et au format SQL.</p>
+			<p><strong>Apprentissages :</strong> J'ai approfondi mes compétences dans l'insertion de données et la réalisation de requêtes complexes. J’ai également appris à identifier les relations et contraintes à appliquer dès la phase de conception.</p>
 			<div class="liens-projet">
 				<a href="#" class="btn-projet">Voir le projet</a>
 			</div>
@@ -62,37 +62,39 @@
 		</div>
 		<div class="critere">
 			<h4>2. Interrogation efficace et affichage des résultats</h4>
-			<p>J’ai réalisé des requêtes SQL complexes (jointures, conditions, tris, agrégations) et en algèbre relationnelle pour extraire des informations pertinentes à partir de la base. J’ai aussi veillé à bien formater et présenter les résultats.</p>
+			<p>J’ai réalisé des requêtes SQL complexes (jointures, conditions, tris, agrégations) et en algèbre relationnelle pour extraire des informations pertinentes à partir de la base. J’ai aussi veillé à formater et présenter les résultats de manière claire.</p>
 		</div>
 		<div class="critere">
 			<h4>3. Conception de la base de données à partir d’un cahier des charges</h4>
-			<p>À partir d’un cahier des charges fourni, j’ai conçu un modèle conceptuel (MCD), un schéma relationnel et créé la base de données en respectant les contraintes fonctionnelles et techniques exigées.</p>
-			<p>Schéma relationnel :
-				<br>R Categorie( id_categ, lib_categ )
-			   <br> R Jeu( id_jeu, titre, difficulte, age_mini, nb_joueur_mini, nb_joueur_maxi, duree, type_duree )
-			   <br> R Adherent( id_adh, nom_adh, prenom_adh, tel_adh, adr_ligne1_adh, (F) adr_ligne2_adh, adr_cp_adh, adr_ville_adh, (F) adr_pays_adh )
-			   <br> R Emprunt( id_emprunt, dte_emprunt, dte_retour_prev, (F) dte_retour_eff , ref_ludo#, id_adh# )
-			   <br> R Auteur( id_auteur, nom_auteur, (F) prenom_auteur, (F) nationalite )
-			   <br> R Exemplaire( ref_ludo, dte_acquisition, ref_rangement, (id_jeu, num_version)# )
-			   <br> R Jeu_version( id_jeu#, num_version, dte_sortie, id_editeur# )
-			   <br> R Editeur( id_editeur, nom_editeur, nationalite )
-			   <br> R Jeu_Adherent ( id_jeu#, id_adh#, note, avis, dta_avis )
-			   <br> R Auteur_Jeu_version ( (id_jeu, num_version)#, id_auteur#, role )
-			   <br> R Categorie_Jeu ( id_jeu#, id_categ# )</p>
-			   <img src="assets/img/C5preuvemcd.png" alt="Preiuve MCD">-
+			<p>À partir d’un cahier des charges fourni, j’ai conçu un MCD (Modèle Conceptuel de Données), un schéma relationnel, puis j’ai créé la base de données en SQL tout en respectant les contraintes fonctionnelles et techniques.</p>
+			<p>Schéma relationnel :</p>
+			<pre>
+R Categorie(id_categ, lib_categ)
+R Jeu(id_jeu, titre, difficulte, age_mini, nb_joueur_mini, nb_joueur_maxi, duree, type_duree)
+R Adherent(id_adh, nom_adh, prenom_adh, tel_adh, adr_ligne1_adh, [adr_ligne2_adh], adr_cp_adh, adr_ville_adh, [adr_pays_adh])
+R Emprunt(id_emprunt, dte_emprunt, dte_retour_prev, [dte_retour_eff], ref_ludo#, id_adh#)
+R Auteur(id_auteur, nom_auteur, [prenom_auteur], [nationalite])
+R Exemplaire(ref_ludo, dte_acquisition, ref_rangement, (id_jeu, num_version)#)
+R Jeu_version(id_jeu#, num_version, dte_sortie, id_editeur#)
+R Editeur(id_editeur, nom_editeur, nationalite)
+R Jeu_Adherent(id_jeu#, id_adh#, note, avis, dta_avis)
+R Auteur_Jeu_version((id_jeu, num_version)#, id_auteur#, role)
+R Categorie_Jeu(id_jeu#, id_categ#)
+			</pre>
+			<img src="assets/img/C5preuvemcd.png" alt="Preuve MCD">
 		</div>
 		<div class="critere">
 			<h4>4. Assurance de la cohérence et de la qualité de la base de données</h4>
-			<p>J’ai appliqué des contraintes d’intégrité (clés primaires, étrangères, types de données) pour garantir la cohérence et la validité des données, et j’ai testé les cas d’insertion et de suppression pour vérifier la robustesse du système.</p>
-			<img src="assets/img/C5preuveCreate.png" alt="Create preuve SQL">
+			<p>J’ai appliqué des contraintes d’intégrité (clés primaires, clés étrangères, types de données) pour garantir la validité des données, et j’ai effectué des tests pour vérifier la robustesse du modèle.</p>
+			<img src="assets/img/C5preuveCreate.png" alt="Preuve création SQL">
 		</div>
 		<div class="critere">
 			<h4>5. Appui sur les modèles de données utilisés</h4>
-			<p>Je me suis appuyé sur le modèle entité-association (MCD) et le modèle relationnel pour structurer les données de façon logique, avant de passer à leur implémentation en SQL.</p>
+			<p>Je me suis appuyé sur le modèle entité-association (MCD) et le modèle relationnel pour structurer les données de manière logique avant de les implémenter en SQL.</p>
 		</div>
 		<div class="critere">
 			<h4>6. Adaptation et autocritique</h4>
-			<p>Ce projet m’a permis d’identifier mes facilités dans la logique des requêtes et mes difficultés dans la gestion de certaines contraintes complexes. J’ai appris à revoir mes schémas et requêtes en fonction des retours et erreurs détectées.</p>
+			<p>Ce projet m’a permis d’identifier mes points forts (logique de requêtage) et mes points faibles (gestion de certaines contraintes complexes). J’ai su revoir mes schémas et mes requêtes en fonction des retours reçus.</p>
 		</div>
 	</div>
 
@@ -100,19 +102,19 @@
 	<div class="reflexion">
 		<h4>Points forts identifiés :</h4>
 		<ul>
-			<li>Je sais construire une base de données à partir d'un schemas relationnel.</li>
-			<li>Je sais faires des requêtes efficaces et fonctionnelles.</li>
+			<li>Je sais construire une base de données à partir d’un schéma relationnel.</li>
+			<li>Je sais effectuer des requêtes efficaces et pertinentes.</li>
 		</ul>
 
 		<h4>Axes d'amélioration :</h4>
 		<ul>
-			<li>Je doit encore m'ameliorer sur conception  des diagrammes MCD.</li>
+			<li>Je dois encore progresser dans la conception des diagrammes MCD.</li>
 		</ul>
 
 		<h4>Objectifs pour la suite :</h4>
 		<ul>
-			<li>[Objectif 1]</li>
-			<li>[Objectif 2]</li>
+			<li>Renforcer ma capacité à modéliser les données complexes avec précision.</li>
+			<li>M’entraîner à écrire des requêtes SQL avancées incluant des sous-requêtes et des vues.</li>
 		</ul>
 	</div>
 </body>
